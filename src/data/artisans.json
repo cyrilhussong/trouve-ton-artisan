@@ -1,0 +1,30 @@
+
+[
+  {
+    "id": 1,
+    "name": "Michael Durand",
+    "specialty": "Plombier",
+    "city": "Lyon",
+    "rating": 4,
+    "description": "Spécialiste en plomberie générale. Disponible 7j/7.",
+    "website": "https://michaelplombier.fr"
+  },
+  {
+    "id": 2,
+    "name": "Dupont fils",
+    "specialty": "Menuiserie",
+    "city": "Grenoble",
+    "rating": 5,
+    "description": "Menuiserie sur mesure et rénovation bois.",
+    "website": ""
+  },
+  {
+    "id": 3,
+    "name": "THOMAS LEFEVRE",
+    "specialty": "électricien",
+    "city": "Saint-étienne",
+    "rating": 5,
+    "description": "Installation électrique et mise aux normes.",
+    "website": "https://lefevreelec.fr"
+  }
+]

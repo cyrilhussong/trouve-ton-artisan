@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+.bg-primary { 
+  background-color: #007bff; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-light-blue { 
+  background-color: #e6f1fa; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-white { 
+  color: #fff; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #e6f1fa;
+  font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.artisan-card {
+  background-color: #aee2ff;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 180px;
+  height: 200px; /* Hauteur fixe pour un centrage vertical */
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: center; /* Centre verticalement */
+  text-align: center; /* Centre horizontalement le texte */
+  transition: transform 0.2s;
+}
+
+.artisan-card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.stars {
+  font-size: 20px;
+  color: black;
+}
+
+.artisan-detail-card {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  width: 90%; /* taille fluide sur mobile */
+  margin: auto;
+  background-color: #e6f1fa;
+  padding: 20px 25px;
+  border-radius: 12px;
+  border: 1px solid #007bff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0,86,179,0.5);
+}
+
+.contact-form button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-form button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 15px;
+  color: #007bff;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.page-container {
+  min-height: 100vh;               /* Prend toute la hauteur visible */
+  max-width: 900px;                /* Largeur max pour limiter la page */
+  margin: 0 auto;                  /* Centre horizontalement */
+  padding: 20px 15px;              /* Padding intérieur */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;     /* contenu commence en haut */
+  align-items: center;             /* Centre horizontalement les éléments enfants */
+  background-color: #e6f1fa;       /* Même fond que body (optionnel) */
+  box-sizing: border-box;          /* Pour que padding soit inclus dans la largeur */
+}
+
+/* Liste centrée avec largeur max et marges auto */
+ol.text-start {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  padding-left: 1.25rem; /* indentation propre */
+}
+
+/* Conteneur des cartes artisans */
+.artisan-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 900px;
+  margin-bottom: 3rem;
+}
+
+/* Responsive : ajustements mobile */
+@media (max-width: 600px) {
+  .page-container {
+    padding: 15px 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  ol.text-start {
+    max-width: 100%;
+    padding-left: 1rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+  }
+
+  h2, h3 {
+    font-size: 1.4rem;
   }
 }
