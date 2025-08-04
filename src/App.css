@@ -1,3 +1,6 @@
+/* App.css */
+@import "leaflet/dist/leaflet.css";
+
 .bg-primary { 
   background-color: #007bff; 
 }
@@ -165,4 +168,38 @@ ol.text-start {
   h2, h3 {
     font-size: 1.4rem;
   }
+}
+
+.page-container {
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* centrer verticalement */
+  align-items: center;          /* centrer horizontalement */
+  background-color: #e6f1fa;
+  box-sizing: border-box;
+  text-align: center;           /* centrer le texte */
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* hauteur = hauteur fenêtre */
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centre verticalement */
+  align-items: center;     /* centre horizontalement */
+  padding: 2rem;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 1rem 0;
 }

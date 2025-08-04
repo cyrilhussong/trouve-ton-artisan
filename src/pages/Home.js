@@ -12,6 +12,7 @@ function Home() {
           <li>Choisir la catégorie d’artisanat dans le menu.</li>
           <li>Choisir un artisan.</li>
           <li>Le contacter via le formulaire de contact.</li>
+          <li>Une réponse sera apportée sous 48h.</li>
         </ol>
       </section>
 

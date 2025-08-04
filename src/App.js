@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import ArtisanList from './pages/ArtisanList';
 import ArtisanDetail from './pages/ArtisanDetail';
 import NotFound from './pages/NotFound';
-import './App.css'; // ou le nom de ton fichier CSS où se trouve `.artisan-card`
 
 function App() {
   return (
@@ -15,6 +14,7 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/artisans/recherche" element={<ArtisanList />} />
           <Route path="/artisans/:category" element={<ArtisanList />} />
           <Route path="/artisan/:id" element={<ArtisanDetail />} />
           <Route path="*" element={<NotFound />} />
